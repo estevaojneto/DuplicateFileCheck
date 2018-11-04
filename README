@@ -1,6 +1,6 @@
 (This Python script was made mostly as a test algorithm. Use at your own risk!)
 
-This is a quite simple and straightforward Python script that checks for repeated files in a given folder and moves them to a user-inputted output folder. It is quite fast; by using a hash table, we can quickly verify if a file already exists in the folder. The logic here is simple: if a file's MD5 hash is present on the hash table (aka a collision), it means that it is duplicated. Then we add that file's name to another list, and move all files to somewhere else.
+This is a quite simple and straightforward Python script that checks for repeated files in a given folder and moves them to a user-inputted output folder. It is quite fast; by using a hash table, we can quickly verify if a file already exists in the folder. The logic here is simple: if a file's MD5 hash is present on the hash table (aka a collision), it means that it is duplicated. Then we add that file's name to another list, and move all files to somewhere else. (MD5 hashing the files is still a slow process though, there's nothing to be done about that)
 
 Some things to note:
 -It is not recursive; meaning, it won't search subdirectories for repeating files. At least not for now. ;)
